@@ -26,17 +26,29 @@ The system supports:
 ### **Pipeline Flow**
 
 User Input (PDF + Chapter)
+
 ↓
+
 PDF Parsing (pdfplumber)
+
 ↓
+
 Text Chunking (LangChain)
+
 ↓
+
 Embeddings (HuggingFace MiniLM)
+
 ↓
+
 FAISS Vector Store
+
 ↓
+
 LLM (Groq LLaMA3) → Extraction + LaTeX Formatting
+
 ↓
+
 Streamlit UI Output (.tex Download)
 
 

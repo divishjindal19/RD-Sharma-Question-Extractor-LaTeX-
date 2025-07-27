@@ -71,17 +71,26 @@ Streamlit UI Output (.tex Download)
 ```bash
 git clone <repo-url>
 cd project
-
+```
+### **2. Create Virtual Environment**
+```bash
 python -m venv venv
 venv\Scripts\activate   # Windows
 source venv/bin/activate  # Mac/Linux
-
+```
+### **3. Install Dependencies**
+```bash
 pip install -r requirements.txt
-
+```
+### **4. Configure API Key**
+```bash
 GROQ_API_KEY=your_groq_api_key_here
-
+```
+### **5. Run the App**
+```
 streamlit run app.py
-
+```
+```
 From the text below, extract ONLY the questions (ignore theory, solutions, definitions).
 Return them in LaTeX format.
 
@@ -95,6 +104,6 @@ Text:
 {text}
 
 Output in LaTeX:
-
+```
 
 
